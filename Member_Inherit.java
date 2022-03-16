@@ -20,6 +20,10 @@ class Member
         System.out.println("Enter Salary");
         salary=sc.nextDouble();
     }
+    void display()
+    {
+        System.out.println("Name :"+name+"\nAge :"+age+"\nPhone no :"+phno+"\nAdress :"+address+"\nSalary :"+salary);
+    }
 }
 class Employee extends Member
 {
@@ -38,11 +42,13 @@ class Member_Inherit
     {
         Employee emp=new Employee();
         emp.PrintSalary();
+        emp.display();
         emp.specialization="Mechanical";
         System.out.println("Specialization :"+emp.specialization);
         
         Manager mg=new Manager();
         mg.PrintSalary();
+        mg.display();
         mg.department="Resource";
       //  System.out.println("Specialization :"+mg.specialization);
         System.out.println("Departement :"+mg.department);
