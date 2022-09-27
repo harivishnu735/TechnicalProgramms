@@ -1,42 +1,238 @@
-/* JFM1T4_Assignment4:
-   Write a program to print the following pattern:
-     1 
-     01 
-     101 
-     0101 
-     10101 
+/*
+          * 
+        * * 
+      * * * 
+    * * * * 
+  * * * * * 
+    * * * * 
+      * * * 
+        * * 
+          * 
+class Pattern{
+  public static void main (String args[]){
+    int n=5;
+    for(int row=1;row<n;row++){
+      for(int col=row;col<=n;col++){
+        System.out.print("  ");
+      }
+      for(int k=1;k<=row;k++){
+        System.out.print("* ");
+      }
+      System.out.println();
+    }
+    for(int row=1;row<=n;row++){
+      for(int col=1;col<=row;col++){
+        System.out.print("  ");
+      }
+      for(int k=row;k<=n;k++){
+        System.out.print("* ");
+      }
+      System.out.println();
+    }
+  }
+}   */
+
+/*
+* 
+**  
+***   
+****    
+*****     
+****     
+***    
+**   
+* 
+class Pattern{
+  public static void main (String args[]){
+    int n=5;
+    for(int row=1;row<=n;row++){
+      for(int k=1;k<=row;k++){
+         System.out.print("*");
+      }
+      
+      for(int col=1;col<=row;col++){
+         System.out.print(" ");
+      }
+       System.out.println();
+    }
+    for(int row=1;row<=n;row++){
+      for(int k=row;k<n;k++){
+         System.out.print("*");
+      }
+      
+      for(int col=row;col<=n;col++){
+         System.out.print(" ");
+      }
+       System.out.println();
+    }
+  }
+}   */
+
+/*
+ *********
+  *******
+   *****
+    ***
+     *
+class Pattern{
+  public static void main (String args[]){
+    int n=5;
+    for(int row=1;row<=n;row++){
+      for(int col=1;col<=row;col++){
+         System.out.print(" ");
+      }
+      for(int k=row;k<n;k++){
+         System.out.print("*");
+      }
+      for(int m=row;m<=n;m++){
+        System.out.print("*");
+      }
+       System.out.println();
+    }
+  }
+}  */
+
+/*
+     *
+    ***
+   *****
+  *******
+ *********
+  *******
+   *****
+    ***
+     *
+class Pattern{
+  public static void main (String args[]){
+    int n=5;
+    for(int row=1;row<n;row++){
+      for(int col=row;col<=n;col++){
+        System.out.print(" ");
+      }
+      for(int k=1;k<row;k++){
+        System.out.print("*");
+      }
+        for(int m=1;m<=row;m++){
+         System.out.print("*");
+      }
+      System.out.println();
+    }
+    for(int row=1;row<=n;row++){
+      for(int col=1;col<=row;col++){
+        System.out.print(" ");
+      }
+      for(int k=row;k<n;k++){
+        System.out.print("*");
+      }
+       for(int m=row;m<=n;m++){
+         System.out.print("*");
+      } 
+      System.out.println();
+    }
+  }
+}
 */
 
-public class Pattern {
-     
-//Add main method here
-public static void main(String args[])
-{
-    int  n=5;
-    for(int i=0;i<n;i++)
-    {
-        for (int j=0;j<=i;j++)
-        {
-            if((i+j)%2==0)
-            {
-                System.out.print(1);
-            }
-            else
-            {
-                System.out.print(0);
-            }
-            
-        }
-        System.out.println();
+/*
+     *
+    ***
+   *****
+  *******
+ *********
+
+class Pattern{
+  public static void main (String args[]){
+    int n=5;
+    for(int row=1;row<=n;row++){
+      for(int col=row;col<=n;col++){
+        System.out.print(" ");
+      }
+      for(int k=1;k<row;k++){
+        System.out.print("*");
+      }
+      for(int m=1;m<=row;m++){
+        System.out.print("*");
+      }
+      System.out.println();
     }
-    
+  }
+}  */
+/*
+* * * * *
+  * * * *
+    * * *
+      * *
+        *  
+class Pattern{
+  public static void main (String args[]){
+    int n=5;
+    for(int row=1;row<=n;row++){
+      for(int col=1;col<=row;col++){
+        System.out.print("  ");
+      }
+      for(int k=row;k<=n;k++){
+        System.out.print("* ");
+      }
+      System.out.println();
+    }
+  }
 }
+*/
+/* 
+    *
+   **
+  ***
+ ****
+*****
+class Pattern{
+  public static void main (String args[]){
+    int n=5;
+    for(int row=1;row<=n;row++){
+      for(int col=row;col<=n;col++){
+        System.out.print(" ");
+      }
+      for(int k=1;k<=row;k++){
+        System.out.print("*");
+      }
+      System.out.println();
+    }
+  }
+}*/
 
-//Declare variable n and initialize value as 5
 
-//Check whether the i and j are equal or not using for loop
-
-//If i and j are equal check (i+j)%2==0 or not if zero then print one else print zero
-
-
+/** * * * *
+* * * *
+* * * 
+* *
+*
+  
+class Pattern{
+  public static void main (String args[]){
+    int n=5;
+    for(int row=1;row<=n;row++){
+      for(int col=row;col<=n;col++){
+        System.out.print(row +" ");
+      }
+      System.out.println();
+    }
+  }
 }
+*/
+
+/*
+*
+* *
+* * *
+* * * *   */
+class Pattern{
+  public static void main (String args[]){
+    int n=5;
+    for(int row=1;row<=n;row++){
+      
+      for(int col=1;col<=row;col++){
+        System.out.print("* "); 
+      }
+      System.out.println();
+    }
+  }
+}  
